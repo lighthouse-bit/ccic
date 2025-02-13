@@ -1,10 +1,14 @@
 import React from 'react';  
-import Hero from '../../Components/Hero/Hero';
+import Hero from '../../Components/Home/Hero/Hero';
 import './Home.css';
+import PartCollab from '../../Components/Home/PartCollab';
 import donate from "../../Components/Assests/donate.png"
 import event1 from "../../Components/Assests/event1.png"
 import event2 from "../../Components/Assests/event2.png"
 import event3 from "../../Components/Assests/event3.png"
+import Founder from "../../Components/Assests/founder.png"
+import GallerySec from '../../Components/Home/GallerySec';
+import LeaveUs from '../../Components/Home/LeaveUs';
 
 
 const programs = [
@@ -12,21 +16,21 @@ const programs = [
       id: 1,
       date: "20th January 2025",
       title: "Advancing women and girls in climate resilience",
-      image: {event1},
+      image: event1,
       link: "#",
     },
     {
       id: 2,
       date: "11th October 2024",
       title: "Youth leadership in climate action and peacebuilding",
-      image: {event2},
+      image: event2,
       link: "#",
     },
     {
       id: 3,
       date: "14th February 2023",
       title: "Local conference of youth (LCOY) in Freetown",
-      image: {event3},
+      image: event3,
       link: "#",
     },
   ];
@@ -52,7 +56,7 @@ const Home=() => {
                     <div className="message-wrapper">
                         <div className="image-container">
                             <img
-                                src="https://via.placeholder.com/150"
+                                src={Founder}
                                 alt="Founder"
                                 className="founder-image"
                             />
@@ -125,12 +129,7 @@ const Home=() => {
             <div className="statements">
                 <div>
                     <h1>OUR OBJECTIVES</h1>
-                    <p>To inspire and empower communities by fostering youth leadership, promoting gender equality, and driving climate action for a sustainable and inclusive future.</p>
-                    {/* <ul>
-                        <li>To improve awareness and awareness of Climate justice, Gender and Social inclusion, WASH, Economic justice, Education, Health, Agriculture amongst citizens.</li>
-                    
-                    </ul> */}
-                    {/* <p className='bullet-paragraph'>To improve awareness and awareness of Climate justice, Gender and Social inclusion, WASH, Economic justice, Education, Health, Agriculture amongst citizens.</p>
+                    <p className='bullet-paragraph'>To improve awareness and awareness of Climate justice, Gender and Social inclusion, WASH, Economic justice, Education, Health, Agriculture amongst citizens.</p>
                     <p className='bullet-paragraph'>To provide sustainable development (Appropriate technology and development).</p>
                     <p className='bullet-paragraph'>To provide technical assistance and capacity-building support to organization and communities in implementing climate change mitigation and adaptation projects.</p>
                     <p className='bullet-paragraph'>To promote sustainable and resilient practices in sectors such as Energy, Transportation, Agriculture, and waste management, through policy advocacy and awareness-raising efforts.</p>
@@ -140,16 +139,34 @@ const Home=() => {
                     <p className='bullet-paragraph'>To eliminate early and forced marriage. Securing equal participation and opportunities.</p>
                     <p className='bullet-paragraph'>To foster and develop increased learning and development opportunities for young people by encouraging and supporting them to contribute, steer initiatives.</p>
                     <p className='bullet-paragraph'>To eliminate destructive behaviors.</p>
-                    <p className='bullet-paragraph'>To create opportunities and express their abilities and skills by empowering them in their decision making.</p> */}
+                    <p className='bullet-paragraph'>To create opportunities and express their abilities and skills by empowering them in their decision making.</p>
                 </div>
                 <div>
-                    <h1>OUR PPILLARS OF ACTION</h1>
-                    <h3>YOUTH PARTICIPATION</h3>
+                    <h1>OUR PILLARS OF ACTION</h1>
+                    <h3>Youth Participation</h3>
                     <p className='bullet-paragraph'>Mobilizing and equipping young people to engage in policy making and development process.</p>
                     <p className='bullet-paragraph'>Building capacity through leadership training, mentorship, and advocacy programs.</p>
+                    <h3>Gender Equality</h3>
+                    <p className='bullet-paragraph'>Promoting women’s empowerment and leadership in climate resilience and peacebuilding.</p>
+                    <p className='bullet-paragraph'>Advocating for policies and initiatives that combat gender-based violence and discrimination.</p>
+                    <h3>Climate Action</h3>
+                    <p className='bullet-paragraph'>Driving community-led adaptation and mitigation projects.</p>
+                    <p className='bullet-paragraph'>Partnering with local stakeholders to address climate induced challenges in agriculture, energy and water resources.</p>
+                    <h3>Capacity Building</h3>
+                    <p className='bullet-paragraph'>Delivering targeted training programs to strengthen community resilience.</p>
+                    <p className='bullet-paragraph'>Supporting skills development for youth and women to enhance their impact and sustainability.</p>
                 </div>  
             </div>
-            <h1>This is home</h1>
+
+             <div className="partners-collaborators">
+                <div className='part-collab'>
+                    <h1>OUR PARTNERS AND COLLABORATORS</h1>
+                </div>
+                <PartCollab />
+                <GallerySec />
+                <LeaveUs />
+            </div>       
+        
         </div>
     )
 }

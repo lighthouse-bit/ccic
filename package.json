@@ -8,10 +8,13 @@
     "@testing-library/user-event": "^13.5.0",
     "cra-template": "1.2.0",
     "git": "^0.1.5",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.2.2",
     "web-vitals": "^2.1.4"
   },
@@ -38,10 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.3",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1"
   }
+  
 }

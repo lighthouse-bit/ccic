@@ -1,0 +1,84 @@
+.donations{
+    margin-bottom: 5rem;
+    padding: 4rem;
+}
+
+.donations h1 {
+    font-weight: 700;
+    color: #052F6B;
+    margin-bottom: 1rem;
+}
+
+.donations p {
+    color: #212121;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Image container */
+.donations-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.donations-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.donation-btn button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Medium screens: Adjust image size */
+@media (max-width: 1024px) {
+    .donations img {
+        width: 280px;
+    }
+}
+
+/* Small screens: Stack images vertically */
+@media (max-width: 768px) {
+    .donations-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donations-img img {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .donations p {
+        padding: 0 1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .donations h2 {
+        font-size: 1.2rem;
+    }
+
+    .donations-img img {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .donations p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}

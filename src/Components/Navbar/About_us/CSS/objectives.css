@@ -1,0 +1,23 @@
+.objective-container{
+    padding: 4rem;
+    background: #f9f9f9;
+}
+
+.objectives h1{
+    color: #052F6B;
+    font-weight: 700;
+}
+
+.main-objective h2{
+    font-weight: 600;
+    color: #052F6B;
+}
+
+.main-objective p{
+    font-weight: 400;
+    color: #212121;
+}
+
+.obj img{
+    width: 100%;
+}

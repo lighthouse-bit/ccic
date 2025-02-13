@@ -1,0 +1,39 @@
+.team-container{
+    padding: 4rem;
+    background: #f9f9f9;
+}
+
+.our-team hr{
+    margin-bottom: 4rem;
+}
+
+.our-team h1{
+    color: #052F6B;
+    font-weight: 700;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.team-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img p1{
+    color: #052F6B;
+    font-weight: 700;
+}
+.team-img p2{
+    color: #052F6B;
+    font-weight: 400;
+}
+
+.team-img img{
+    width: 200px;
+}

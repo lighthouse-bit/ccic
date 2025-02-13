@@ -1,0 +1,44 @@
+.vision-container{
+    padding: 4rem;
+    background: #f9f9f9;
+}
+
+.vision-container h1{
+    color: #052F6B;
+    font-weight: 700;
+}
+
+.vision-mission{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.vision-mission p{
+    font-weight: 400;
+}
+
+.vision{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.vision img{
+    width: 570px;
+}
+
+.mission{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mission img{
+    width: 570px;
+}

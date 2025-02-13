@@ -1,0 +1,99 @@
+.leadership-container {
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.leadership-container h2 {
+    font-weight: 600;
+    color: #052F6B;
+    margin-bottom: 1rem;
+}
+
+.leadership-container p {
+    color: #212121;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Default: Normal Image Layout */
+.leadership-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.leadership-image img {
+    width: 360px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Medium Screens: Adjust Image Size */
+@media (max-width: 1024px) {
+    .leadership-image img {
+        width: 280px;
+    }
+}
+
+/* Small Screens: Stack Images Vertically */
+@media (max-width: 768px) {
+    .leadership-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leadership-image img {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .leadership-container p {
+        padding: 0 1rem;
+    }
+}
+
+/* Extra Small Screens: Hide Normal Layout & Use Carousel */
+@media (max-width: 480px) {
+    .leadership-container h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Hide normal layout */
+    .leadership-image {
+        display: none;
+    }
+
+    .leadership-container p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    /* Carousel Styling */
+    .leadership-carousel {
+        display: block;
+        text-align: center;
+    }
+
+    .leadership-carousel img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    /* Slick Dots */
+    .slick-dots {
+        bottom: 10px;
+    }
+}
+
+/* Show normal layout by default (for larger screens) */
+@media (min-width: 481px) {
+    .leadership-carousel {
+        display: none;
+    }
+}

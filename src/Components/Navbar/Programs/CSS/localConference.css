@@ -1,0 +1,77 @@
+
+.conference-container {
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.conference-container h2 {
+    font-weight: 600;
+    color: #052F6B;
+    margin-bottom: 1rem;
+}
+
+.conference-container p {
+    color: #212121;
+    font-weight: 400;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Image container */
+.conference-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.conference-image img {
+    width: 360px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Medium screens: Adjust image size */
+@media (max-width: 1024px) {
+    .conference-image img {
+        width: 280px;
+    }
+}
+
+/* Small screens: Stack images vertically */
+@media (max-width: 768px) {
+    .conference-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conference-image img {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .conference-container p {
+        padding: 0 1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .conference-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .conference-image img {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .conference-container p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}

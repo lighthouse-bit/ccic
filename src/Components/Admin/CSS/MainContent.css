@@ -1,0 +1,77 @@
+.header h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bdc3c7;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .stat-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+  }
+  
+  .stat-box h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .stat-box p {
+    margin: 10px 0;
+  }
+  
+  .stat-box button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .totals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .total-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .total-box h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .total-box p {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .updates {
+    margin-top: 40px;
+  }
+  
+  .update-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .update-item p {
+    margin: 0;
+  }

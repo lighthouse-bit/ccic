@@ -1,0 +1,13 @@
+.programs-container{
+    padding: 4rem;
+    background: #f9f9f9;
+}
+
+.programs hr{
+    margin-bottom: 4rem;
+}
+
+.programs h1{
+    color: #052F6B;
+    font-weight: 700;
+}

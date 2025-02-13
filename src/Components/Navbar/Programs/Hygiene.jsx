@@ -1,0 +1,27 @@
+import React from 'react'
+import './CSS/hygiene.css'
+import hygiene1 from '../../Assests/hygiene1.png'
+import hygiene2 from '../../Assests/hygiene2.png'
+import hygiene3 from '../../Assests/hygiene3.png'
+
+const Hygiene = () => {
+  return (
+    <div className='hygiene-container'>
+        <h2>HYGIENE MANAGEMENT PROGRAM</h2>
+        <div className="hygiene-image">
+            <img src={hygiene1} alt="" />
+            <img src={hygiene2} alt="" />
+            <img src={hygiene3} alt="" />
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur. Ultricies felis nibh cras dui venenatis vitae enim mattis amet. Sed lectus interdum lectus tellus quam viverra. Leo sed massa non varius a egestas pellentesque. Mi sit ut risus bibendum urna purus curabitur sapien. Nibh tincidunt sed sed tortor euismod ultricies vitae orci gravida. 
+      Augue ac feugiat volutpat a lorem elit id dolor. Elit duis egestas eros odio libero sit. Dignissim viverra at magna sed sapien urna adipiscing nisl. Enim et et enim nibh ut placerat. Eget elit in quam dignissim amet. Gravida et augue ut risus adipiscing orci viverra posuere. Sodales nisl aliquet mauris pellentesque sed. Ut ac sed enim eget nulla ac. Dignissim dictum tristique fermentum semper urna in amet amet. Nulla pretium vivamus a integer sit enim lobortis magna. Volutpat arcu ac ullamcorper sed nunc.
+       In iaculis mattis lacus enim nunc sed tortor habitasse magnis. Ut facilisis egestas amet faucibus sem faucibus sed morbi lectus.</p>
+       <p>In iaculis mattis lacus enim nunc sed tortor habitasse magnis. Ut facilisis egestas amet faucibus sem faucibus sed morbi lectus.</p>
+       
+        
+    </div>
+  )
+}
+
+export default Hygiene

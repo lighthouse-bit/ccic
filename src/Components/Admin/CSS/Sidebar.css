@@ -1,0 +1,25 @@
+.sidebar-header h2 {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar-menu ul, .sidebar-account ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu ul li, .sidebar-account ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-menu ul li:hover, .sidebar-account ul li:hover {
+  background-color: #34495e;
+}
+
+.sidebar-account {
+  margin-top: 20px;
+  border-top: 1px solid #34495e;
+  padding-top: 20px;
+}

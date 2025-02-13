@@ -1,0 +1,57 @@
+.container{
+    padding: 4rem;
+    background: #f9f9f9;
+}
+
+.about-us h1{
+    color: #052F6B;
+    font-weight: 700;
+}
+
+.about-us img{
+    object-fit: cover;
+    width: 100%;
+    margin-top: 4rem;margin-bottom: 4rem;
+}
+
+.about-text{
+    padding: 4rem;
+}
+
+.about-text p{
+    font-weight: 400;
+}
+
+.partners{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.partners h1{
+    font-weight: 700;
+    color: #052F6B;
+}
+
+.partner-card{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.partner-item{
+    width: 200px;
+    height: auto;
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.partner-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
