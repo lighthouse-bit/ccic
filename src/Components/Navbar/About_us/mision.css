@@ -42,3 +42,96 @@
 .mission img{
     width: 570px;
 }
+
+.vision-container {
+    padding: 4rem;
+    background: #f9f9f9;
+  }
+  
+  .vision-container h1 {
+    color: #052F6B;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .vision-mission {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .vision-mission p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .vision,
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .vision img,
+  .mission img {
+    width: 570px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Query for Tablets (768px and smaller) */
+  @media (max-width: 768px) {
+    .vision-container {
+      padding: 2rem;
+    }
+  
+    .vision-container h1 {
+      font-size: 2rem;
+    }
+  
+    .vision,
+    .mission {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .vision img,
+    .mission img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .vision-mission p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Media Query for Mobile (480px and smaller) */
+  @media (max-width: 480px) {
+    .vision-container {
+      padding: 1rem;
+    }
+  
+    .vision-container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .vision-mission {
+      gap: 1.5rem;
+    }
+  
+    .vision img,
+    .mission img {
+      width: 100%;
+    }
+  
+    .vision-mission p {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+  }

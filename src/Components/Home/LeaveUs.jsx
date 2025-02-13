@@ -34,50 +34,54 @@ const LeaveUs = () => {
   
   return (
     <div className="contact-container">
-      <h2 className="contact-title">LEAVE US A MESSAGE</h2>
-      <div className="contact-content">
-        {/* Illustration Section */}
-        <div className="contact-illustration">
-          <img
-            src={touch}
-            alt="Contact Illustration"
-            className="illustration-img"
-          />
-        </div>
+      <div className="contact-inner">
+          <div><h2 className="contact-title">LEAVE US A MESSAGE</h2></div>
+        
+        <div className="contact-content">
+          {/* Illustration Section */}
+          <div className="contact-illustration">
+            <img
+              src={touch}
+              alt="Contact Illustration"
+              className="illustration-img"
+            />
+          </div>
 
-        {/* Form Section */}
-        <div className="contact-form">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input
-                type="text"
-                placeholder="Name"
-                className="form-input"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                placeholder="E-mail"
-                className="form-input"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                placeholder="Message"
-                className="form-textarea"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="form-submit">
-              Submit Message
-            </button>
-          </form>
+          {/* Form Section */}
+          <div className="contact-form">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="form-input"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  className="form-input"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  placeholder="Message"
+                  className="form-textarea"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="form-submit">
+                Submit Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+      
     </div>
   );
 };

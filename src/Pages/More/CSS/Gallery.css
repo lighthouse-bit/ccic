@@ -52,3 +52,49 @@
     border-radius: 5px;
     object-fit: cover;
   }
+
+  /* Media Queries */
+
+/* For Tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .gallery {
+    padding: 2rem;
+  }
+
+  .gallery h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-filters button {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .gallery-grid img {
+    height: 130px;
+  }
+}
+
+/* For Mobile Devices (480px and smaller) */
+@media (max-width: 480px) {
+  .gallery {
+    padding: 1rem;
+  }
+
+  .gallery h1 {
+    font-size: 1.75rem;
+  }
+
+  .gallery-filters {
+    gap: 5px;
+  }
+
+  .gallery-filters button {
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+
+  .gallery-grid img {
+    height: 100px;
+  }
+}

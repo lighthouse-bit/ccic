@@ -47,10 +47,10 @@ const Navbar = () => {
 
         {/* ABOUT US WITH DROPDOWN */}
         <li
-          className="dropdown-container"
+          className={`dropdown-container ${menu === "about-us" ? "active" : ""}`}
           onMouseEnter={() => setAboutDropdown(true)}
           onMouseLeave={() => setAboutDropdown(false)}
-          onClick={() => setAboutDropdown(!aboutDropdown)}
+          onClick={() => {setMenu("about-us");setAboutDropdown(!aboutDropdown)}}
         >
           <div className="dropdown-toggle">
             <Link to="/about-us">About Us</Link>
@@ -58,6 +58,7 @@ const Navbar = () => {
               <img src={dropdown} alt="Dropdown Icon" />
             </span>
           </div>
+          {menu === "about-us" && <hr />}
           {aboutDropdown && (
             <ul className="dropdown">
               <li><Link to="/about-us/vision-mission">Vision & Mission</Link></li>
@@ -70,10 +71,13 @@ const Navbar = () => {
 
         {/* PROGRAMS WITH DROPDOWN */}
         <li
-          className="dropdown-container"
+          className={`dropdown-container ${menu === "programs" ? "active" : ""}`}
           onMouseEnter={() => setProgramsDropdown(true)}
           onMouseLeave={() => setProgramsDropdown(false)}
-          onClick={() => setProgramsDropdown(!programsDropdown)}
+          onClick={() =>  {
+              setMenu("programs");
+              setProgramsDropdown(!programsDropdown);
+            }}
         >
           <div className="dropdown-toggle">
             <Link to="/programs">Programs</Link>
@@ -81,6 +85,7 @@ const Navbar = () => {
               <img src={dropdown} alt="Dropdown Icon" />
             </span>
           </div>
+          {menu === "programs" && <hr />}
           {programsDropdown && (
             <ul className="dropdown">
               <li><Link to="/programs/women-climate">Women in climate resilience</Link></li>
@@ -101,10 +106,13 @@ const Navbar = () => {
 
         {/* MORE WITH DROPDOWN */}
         <li
-          className="dropdown-container"
+          className={`dropdown-container ${menu === "more" ? "active" : ""}`}
           onMouseEnter={() => setMoreDropdown(true)}
           onMouseLeave={() => setMoreDropdown(false)}
-          onClick={() => setMoreDropdown(!moreDropdown)}
+          onClick={() =>  {
+                setMenu("more");
+                setMoreDropdown(!moreDropdown);
+              }}
         >
           <div className="dropdown-toggle">
             <Link to="">More</Link>
@@ -112,6 +120,7 @@ const Navbar = () => {
               <img src={dropdown} alt="Dropdown Icon" />
             </span>
           </div>
+          {menu === "more" && <hr />}
           {moreDropdown && (
             <ul className="dropdown">
               <li><Link to="/gallery">Gallery</Link></li>
@@ -119,6 +128,13 @@ const Navbar = () => {
               <li><Link to="/donation">Make a Donation</Link></li>
             </ul>
           )}
+        </li>
+
+        {/* Include Donate Button for Mobile */}
+        <li className="donate-mobile-only">
+          <Link to="/login">
+            <button>Donate Now</button>
+          </Link>
         </li>
       </ul>
 

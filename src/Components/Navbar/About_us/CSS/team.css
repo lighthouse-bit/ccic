@@ -37,3 +37,58 @@
 .team-img img{
     width: 200px;
 }
+
+/* Media Query for Tablets (768px and smaller) */
+@media (max-width: 768px) {
+    .team-container {
+      padding: 2rem;
+    }
+  
+    .our-team h1 {
+      font-size: 2rem;
+    }
+  
+    .team {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .team-img img {
+      width: 180px;
+    }
+  
+    .team-img p1,
+    .team-img p2 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media Query for Mobile (480px and smaller) */
+  @media (max-width: 480px) {
+    .team-container {
+      padding: 1rem;
+    }
+  
+    .our-team h1 {
+      font-size: 1.75rem;
+    }
+  
+    .team {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .team-img img {
+      width: 150px;
+    }
+  
+    .team-img p1,
+    .team-img p2 {
+      font-size: 0.9rem;
+    }
+  
+    .team-img p {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+  }
